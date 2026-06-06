@@ -1,0 +1,22 @@
+<div class="page">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Portfolio</span>
+      <h1>I nostri progetti</h1>
+      <p class="page-hero__sub">
+        Una selezione di interventi tra residenziale, restauro, urbanistica e
+        infrastrutture, sviluppati con modellazione BIM e render fotorealistici.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        @for (p of progetti; track p.slug) {
+          <app-project-card [project]="p"></app-project-card>
+        }
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,111 @@
+<div class="page">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="brand/insegna.png" alt="" aria-hidden="true" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <span class="eyebrow eyebrow--light">{{ studio.nome }}</span>
+      <h1 class="hero__title">{{ studio.architetto }}</h1>
+      <p class="hero__motto">«{{ studio.motto }}»</p>
+      <p class="hero__sub">
+        Architettura, restauro e innovazione digitale. Dal concept alla
+        realizzazione, con modellazione BIM, rilievi con drone e render
+        fotorealistici.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--light" routerLink="/progetti">Esplora i progetti</a>
+        <a class="btn btn--ghost btn--ghost-light" routerLink="/contatti"
+          >Contattaci</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container intro">
+      <div class="intro__text">
+        <span class="eyebrow">Lo Studio</span>
+        <h2 class="section-title">Progettare con metodo, visione e precisione</h2>
+        <p>
+          Da oltre trent'anni accompagniamo committenti pubblici e privati lungo
+          tutte le fasi del progetto, con un approccio integrato attento alla
+          qualità e alla sostenibilità. La modellazione 3D e BIM, i rilievi con
+          drone e i render fotorealistici guidano ogni scelta, dall'idea iniziale
+          alla gestione dell'opera.
+        </p>
+        <a class="btn btn--ghost" routerLink="/chi-siamo">Chi siamo</a>
+      </div>
+      <div class="intro__stats">
+        <div class="stat">
+          <strong>30+</strong>
+          <span>anni di esperienza</span>
+        </div>
+        <div class="stat">
+          <strong>BIM</strong>
+          <span>modellazione e gestione</span>
+        </div>
+        <div class="stat">
+          <strong>10+</strong>
+          <span>progetti realizzati</span>
+        </div>
+        <div class="stat">
+          <strong>CTU</strong>
+          <span>Tribunale di Nola</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGETTI IN EVIDENZA -->
+  <section class="section section--grigio">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Portfolio</span>
+          <h2 class="section-title">Progetti in evidenza</h2>
+        </div>
+        <a class="btn btn--ghost" routerLink="/progetti">Tutti i progetti</a>
+      </div>
+      <div class="grid-3">
+        @for (p of progettiInEvidenza; track p.slug) {
+          <app-project-card [project]="p"></app-project-card>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Cosa facciamo</span>
+          <h2 class="section-title">I nostri servizi</h2>
+        </div>
+        <a class="btn btn--ghost" routerLink="/servizi">Tutti i servizi</a>
+      </div>
+      <div class="grid-3 servizi-mini">
+        @for (s of servizi; track s.title) {
+          <div class="servizio-mini">
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.description }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CONTATTI -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <div>
+        <h2>Hai un progetto in mente?</h2>
+        <p>Raccontaci la tua idea: la trasformeremo in un progetto concreto.</p>
+      </div>
+      <a class="btn btn--light" routerLink="/contatti">Mettiti in contatto</a>
+    </div>
+  </section>
+</div>

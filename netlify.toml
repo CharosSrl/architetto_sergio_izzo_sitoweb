@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist/studio-izzo-web/browser"
+
+# Fallback per il routing SPA di Angular: ogni rotta serve index.html
+# (deep link come /progetti/villa-malfi-pomigliano funzionano al refresh).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,88 @@
+<div class="page">
+  <!-- Intestazione pagina -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Chi Siamo</span>
+      <h1>{{ studio.architetto }}</h1>
+      <p class="page-hero__motto">«{{ studio.motto }}»</p>
+    </div>
+  </section>
+
+  <!-- Biografia -->
+  <section class="section">
+    <div class="container bio">
+      <div class="bio__text">
+        <p>
+          Formatosi all'Università degli Studi di Napoli «Federico II», opera da
+          oltre trenta anni nel mondo dell'edilizia, seguendo progetti pubblici e
+          privati con un approccio integrato, attento alla qualità e alla
+          sostenibilità.
+        </p>
+        <p>
+          Dal 2004 mette la propria competenza al servizio della giustizia come
+          Consulente Tecnico del Tribunale di Nola, mentre dal 2005 supporta
+          UniCredit Banca nelle valutazioni immobiliari e nelle analisi tecniche
+          per operazioni di rilievo.
+        </p>
+        <p>
+          Accanto alla professione, coltiva da sempre la dimensione accademica:
+          dal 2015 è Tutor d'Aula presso Ingegneria Civile Edile Ambientale
+          (DIcDEA) dell'Università «Luigi Vanvitelli», dove dal 2017 accoglie
+          studenti in tirocinio formativo. Dal 2018 è inoltre Cultore della
+          Materia presso il Dipartimento di Architettura e Disegno Industriale,
+          contribuendo alla ricerca e alla diffusione della cultura del progetto.
+        </p>
+        <p>
+          Un percorso che unisce esperienza sul campo, rigore tecnico e passione
+          per la formazione.
+        </p>
+      </div>
+      <aside class="bio__card">
+        <h3>Un approccio digitale</h3>
+        <p>
+          La modellazione 3D e BIM, i rilievi con drone e la produzione di render
+          fotorealistici guidano ogni fase del lavoro, dall'idea iniziale alla
+          realizzazione e gestione dell'opera, sviluppando progetti BIM edilizi e
+          infrastrutturali che garantiscono efficienza, riduzione degli errori e
+          un controllo totale del processo progettuale.
+        </p>
+        <p class="bio__card-claim">
+          Qualità, precisione e coerenza visiva in ogni dettaglio.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Tappe / percorso -->
+  <section class="section section--grigio">
+    <div class="container">
+      <span class="eyebrow">Il percorso</span>
+      <h2 class="section-title">Esperienza e formazione</h2>
+      <div class="timeline">
+        @for (t of tappe; track t.titolo) {
+          <div class="timeline__item">
+            <div class="timeline__anno">{{ t.anno }}</div>
+            <h3>{{ t.titolo }}</h3>
+            <p>{{ t.testo }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <div>
+        <h2>Lavoriamo insieme</h2>
+        <p>Scopri i nostri progetti o contattaci per una consulenza.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--light" routerLink="/progetti">Progetti</a>
+        <a class="btn btn--ghost btn--ghost-light" routerLink="/contatti"
+          >Contatti</a
+        >
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,121 @@
+<div class="page">
+  @if (project(); as p) {
+    <!-- Intestazione -->
+    <section class="detail-hero">
+      <div class="detail-hero__bg">
+        <img [src]="p.cover" [alt]="p.title" />
+        <div class="detail-hero__overlay"></div>
+      </div>
+      <div class="container detail-hero__content">
+        <a class="back-link" routerLink="/progetti">← Tutti i progetti</a>
+        <span class="eyebrow eyebrow--light">{{ p.category }}</span>
+        <h1>{{ p.title }}</h1>
+        <p class="detail-hero__meta">
+          {{ p.location }}@if (p.year) {<span> · {{ p.year }}</span>}
+        </p>
+      </div>
+    </section>
+
+    <!-- Descrizione -->
+    <section class="section">
+      <div class="container detail-info">
+        <div class="detail-info__desc">
+          <span class="eyebrow">Il progetto</span>
+          <p>{{ p.description }}</p>
+        </div>
+        <aside class="detail-info__facts">
+          <div class="fact">
+            <span class="fact__label">Località</span>
+            <span class="fact__value">{{ p.location }}</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Tipologia</span>
+            <span class="fact__value">{{ p.category }}</span>
+          </div>
+          @if (p.year) {
+            <div class="fact">
+              <span class="fact__label">Anno</span>
+              <span class="fact__value">{{ p.year }}</span>
+            </div>
+          }
+        </aside>
+      </div>
+    </section>
+
+    <!-- Video (se presente) -->
+    @if (p.video) {
+      <section class="section section--grigio">
+        <div class="container">
+          <span class="eyebrow">Video</span>
+          <h2 class="section-title">Il progetto in movimento</h2>
+          <div class="video-wrap">
+            <video [src]="p.video" controls preload="metadata"></video>
+          </div>
+        </div>
+      </section>
+    }
+
+    <!-- Galleria -->
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Galleria</span>
+        <h2 class="section-title">Immagini del progetto</h2>
+        <div class="gallery">
+          @for (img of p.images; track img; let i = $index) {
+            <button class="gallery__item" (click)="apriLightbox(i)" type="button">
+              <img [src]="img" [alt]="p.title + ' — immagine ' + (i + 1)" loading="lazy" />
+            </button>
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Progetti correlati -->
+    <section class="section section--grigio">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Continua a esplorare</span>
+            <h2 class="section-title">Altri progetti</h2>
+          </div>
+          <a class="btn btn--ghost" routerLink="/progetti">Tutti i progetti</a>
+        </div>
+        <div class="grid-3">
+          @for (c of correlati(); track c.slug) {
+            <a class="rel-card" [routerLink]="['/progetti', c.slug]">
+              <img [src]="c.cover" [alt]="c.title" loading="lazy" />
+              <div class="rel-card__body">
+                <h3>{{ c.title }}</h3>
+                <span>{{ c.location }}</span>
+              </div>
+            </a>
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    @if (lightboxIndex() !== null) {
+      <div class="lightbox" (click)="chiudiLightbox()">
+        <button class="lightbox__close" (click)="chiudiLightbox()" aria-label="Chiudi" type="button">×</button>
+        <button class="lightbox__nav lightbox__nav--prev" (click)="precedente(); $event.stopPropagation()" aria-label="Precedente" type="button">‹</button>
+        <img
+          class="lightbox__img"
+          [src]="p.images[lightboxIndex()!]"
+          [alt]="p.title"
+          (click)="$event.stopPropagation()"
+        />
+        <button class="lightbox__nav lightbox__nav--next" (click)="successiva(); $event.stopPropagation()" aria-label="Successiva" type="button">›</button>
+        <span class="lightbox__count">{{ lightboxIndex()! + 1 }} / {{ p.images.length }}</span>
+      </div>
+    }
+  } @else {
+    <section class="section">
+      <div class="container not-found">
+        <h1>Progetto non trovato</h1>
+        <p>Il progetto che cerchi non è disponibile.</p>
+        <a class="btn btn--primary" routerLink="/progetti">Torna ai progetti</a>
+      </div>
+    </section>
+  }
+</div>

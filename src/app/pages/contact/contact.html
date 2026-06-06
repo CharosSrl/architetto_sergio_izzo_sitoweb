@@ -1,0 +1,64 @@
+<div class="page">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Contatti</span>
+      <h1>Parliamo del tuo progetto</h1>
+      <p class="page-hero__sub">
+        Siamo a disposizione per consulenze, sopralluoghi e preventivi. Scrivici
+        o chiamaci: ti risponderemo il prima possibile.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contatti">
+      <!-- Recapiti -->
+      <div class="contatti__info">
+        <h2>{{ studio.architetto }}</h2>
+        <p class="contatti__motto">«{{ studio.motto }}»</p>
+
+        <ul class="recapiti">
+          <li>
+            <span class="recapiti__label">Email</span>
+            <a [href]="'mailto:' + studio.email">{{ studio.email }}</a>
+          </li>
+          <li>
+            <span class="recapiti__label">PEC</span>
+            <a [href]="'mailto:' + studio.pec">{{ studio.pec }}</a>
+          </li>
+          <li>
+            <span class="recapiti__label">Telefono</span>
+            <a [href]="'tel:' + studio.telefonoLink">{{ studio.telefono }}</a>
+          </li>
+          <li>
+            <span class="recapiti__label">Indirizzo</span>
+            <span>
+              {{ studio.indirizzo }}<br />
+              {{ studio.cap }} {{ studio.citta }}<br />
+              {{ studio.paese }}
+            </span>
+          </li>
+        </ul>
+
+        <a
+          class="btn btn--primary"
+          [href]="'mailto:' + studio.email + '?subject=Richiesta%20informazioni'"
+          >Scrivici una email</a
+        >
+      </div>
+
+      <!-- Mappa -->
+      <div class="contatti__mappa">
+        <iframe
+          title="Mappa dello studio"
+          [src]="mappaUrl"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p class="contatti__mappa-nota">
+          La mappa richiede una connessione a internet.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>

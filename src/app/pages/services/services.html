@@ -1,0 +1,36 @@
+<div class="page">
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Servizi dello Studio</span>
+      <h1>Cosa possiamo fare per te</h1>
+      <p class="page-hero__sub">
+        Un'offerta completa che accompagna ogni fase del progetto: dalla
+        progettazione alla direzione lavori, dalle pratiche edilizie al BIM.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="servizi-grid">
+        @for (s of servizi; track s.title; let i = $index) {
+          <article class="servizio">
+            <span class="servizio__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
+            <h2>{{ s.title }}</h2>
+            <p>{{ s.description }}</p>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta__inner">
+      <div>
+        <h2>Hai bisogno di uno di questi servizi?</h2>
+        <p>Contattaci per una consulenza dedicata alle tue esigenze.</p>
+      </div>
+      <a class="btn btn--light" routerLink="/contatti">Richiedi informazioni</a>
+    </div>
+  </section>
+</div>

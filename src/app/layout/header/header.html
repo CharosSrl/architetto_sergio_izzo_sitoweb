@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__brand" routerLink="/" (click)="chiudiMenu()" aria-label="Home">
+      <img src="brand/logo.png" alt="Studio di Progettazione — Arch. Sergio Izzo" />
+    </a>
+
+    <button
+      class="header__burger"
+      [class.is-open]="menuAperto()"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuAperto()"
+      aria-label="Apri il menu"
+      type="button"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="header__nav" [class.is-open]="menuAperto()">
+      @for (voce of voci; track voce.path) {
+        <a
+          [routerLink]="voce.path"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: voce.path === '/' }"
+          (click)="chiudiMenu()"
+          >{{ voce.label }}</a
+        >
+      }
+    </nav>
+  </div>
+</header>

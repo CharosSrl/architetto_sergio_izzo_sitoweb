@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <img class="footer__logo" src="brand/logo.png" alt="Studio di Progettazione" />
+      <p class="footer__motto">«{{ studio.motto }}»</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigazione</h4>
+      <a routerLink="/">Home</a>
+      <a routerLink="/chi-siamo">Chi Siamo</a>
+      <a routerLink="/progetti">Progetti</a>
+      <a routerLink="/servizi">Servizi</a>
+      <a routerLink="/contatti">Contatti</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contatti</h4>
+      <a [href]="'mailto:' + studio.email">{{ studio.email }}</a>
+      <a [href]="'tel:' + studio.telefonoLink">Tel: {{ studio.telefono }}</a>
+      <span>{{ studio.indirizzo }}</span>
+      <span>{{ studio.cap }} {{ studio.citta }}</span>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      © {{ anno }} {{ studio.architetto }} — {{ studio.nome }}. Tutti i diritti riservati.
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,11 @@
+<a class="card" [routerLink]="['/progetti', project().slug]">
+  <div class="card__media">
+    <img [src]="project().cover" [alt]="project().title" loading="lazy" />
+    <span class="card__cat">{{ project().category }}</span>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">{{ project().title }}</h3>
+    <p class="card__loc">{{ project().location }}</p>
+    <span class="card__link">Scopri il progetto →</span>
+  </div>
+</a>
