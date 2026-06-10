@@ -95,20 +95,22 @@
     </section>
 
     <!-- Lightbox -->
-    @if (lightboxIndex() !== null) {
-      <div class="lightbox" (click)="chiudiLightbox()">
+    <dialog #lb class="lightbox" (cancel)="chiudiLightbox()" (click)="onBackdropClick($event)">
+      @if (lightboxIndex() !== null) {
         <button class="lightbox__close" (click)="chiudiLightbox()" aria-label="Chiudi" type="button">×</button>
         <button class="lightbox__nav lightbox__nav--prev" (click)="precedente(); $event.stopPropagation()" aria-label="Precedente" type="button">‹</button>
         <img
           class="lightbox__img"
           [src]="p.images[lightboxIndex()!]"
-          [alt]="p.title"
+          [alt]="p.title + ' — immagine ' + (lightboxIndex()! + 1)"
           (click)="$event.stopPropagation()"
+          (touchstart)="onTouchStart($event)"
+          (touchend)="onTouchEnd($event)"
         />
         <button class="lightbox__nav lightbox__nav--next" (click)="successiva(); $event.stopPropagation()" aria-label="Successiva" type="button">›</button>
         <span class="lightbox__count">{{ lightboxIndex()! + 1 }} / {{ p.images.length }}</span>
-      </div>
-    }
+      }
+    </dialog>
   } @else {
     <section class="section">
       <div class="container not-found">

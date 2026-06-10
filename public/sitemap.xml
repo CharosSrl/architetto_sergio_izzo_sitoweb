@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Pagine principali -->
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/chi-siamo</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/servizi</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/contatti</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Pagine progetto -->
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/grisolia-resort-sibari</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/quartiere-sulmona-pomigliano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/stir-gisec-santa-maria-capua-vetere</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/izzos-farm-somma-vesuviana</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/villa-malfi-pomigliano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/palazzo-storico-via-bari-napoli</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-accoglienza-san-cipriano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-mirabella-melito</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-esposito-pomigliano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-marra-arzano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
