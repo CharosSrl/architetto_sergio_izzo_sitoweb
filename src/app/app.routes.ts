@@ -25,7 +25,6 @@ export const routes: Routes = [
       import('./pages/project-detail/project-detail').then(
         (m) => m.ProjectDetailComponent
       ),
-    title: 'Progetto — Studio di Progettazione',
   },
   {
     path: 'servizi',
