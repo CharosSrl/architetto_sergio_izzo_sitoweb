@@ -184,16 +184,24 @@
 }
 
 /* ===== Lightbox ===== */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 200;
-  background: rgba(6, 10, 18, 0.92);
+dialog.lightbox {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 40px;
+  max-width: 100vw;
+  max-height: 100dvh;
+  width: 100vw;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  overflow: visible;
   animation: fadeUp 0.25s ease;
+}
+
+dialog.lightbox::backdrop {
+  background: rgba(6, 10, 18, 0.92);
 }
 
 .lightbox__img {
