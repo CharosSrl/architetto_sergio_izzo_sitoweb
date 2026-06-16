@@ -2,7 +2,7 @@
 export const STUDIO = {
   nome: 'Studio di Progettazione',
   architetto: 'Architetto Sergio Izzo',
-  motto: 'Dal cucchiaino alla città',
+  motto: 'Dal cucchiaio alla città',
   email: 's.izzo@awn.it',
   pec: 'sergio.izzo@archiworldpec.it',
   telefono: '08118990988',

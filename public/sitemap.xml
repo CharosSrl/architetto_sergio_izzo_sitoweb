@@ -75,7 +75,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://architettosergioizzo.netlify.app/progetti/casa-marra-arzano</loc>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-sansone-arzano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/b-n-b-borbone-napoli</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-f-esposito</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
