@@ -195,6 +195,120 @@ export const PROJECTS: Project[] = [
       'progetti/casa-marra-arzano/11.jpg',
     ],
   },
+  {
+    slug: 'casa-silvestro-arzano',
+    title: 'Casa Silvestro',
+    location: 'Arzano (NA)',
+    category: 'Residenziale · Ristrutturazione',
+    description:
+      "Ristrutturazione completa di un appartamento, seguita dal progetto architettonico " +
+      "fino alla consegna. L'intervento ha riguardato il rifacimento delle pavimentazioni, " +
+      "la realizzazione di controsoffitti con illuminazione integrata e il rinnovo dei " +
+      "servizi igienici. La documentazione fotografica delle fasi di cantiere affianca le " +
+      "immagini degli ambienti finiti, restituendo l'intero percorso di trasformazione.",
+    cover: 'progetti/casa-silvestro-arzano/01.jpg',
+    images: [
+      'progetti/casa-silvestro-arzano/01.jpg',
+      'progetti/casa-silvestro-arzano/02.jpg',
+      'progetti/casa-silvestro-arzano/03.jpg',
+      'progetti/casa-silvestro-arzano/04.jpg',
+      'progetti/casa-silvestro-arzano/05.jpg',
+      'progetti/casa-silvestro-arzano/06.jpg',
+    ],
+  },
+  {
+    slug: 'casa-mirabelli',
+    title: 'Casa Mirabelli',
+    category: 'Residenziale · Interni',
+    description:
+      "Progetto di interni per una residenza privata, con particolare attenzione al " +
+      "disegno dei controsoffitti e alla luce artificiale. Le geometrie curve delle " +
+      "velette e i tagli luminosi definiscono il carattere degli ambienti, mentre la " +
+      "scelta di rivestimenti e finiture caratterizza le zone di servizio. La planimetria " +
+      "di progetto documenta la distribuzione degli spazi.",
+    cover: 'progetti/casa-mirabelli/01.jpg',
+    images: [
+      'progetti/casa-mirabelli/01.jpg',
+      'progetti/casa-mirabelli/02.jpg',
+      'progetti/casa-mirabelli/03.jpg',
+      'progetti/casa-mirabelli/04.jpg',
+      'progetti/casa-mirabelli/05.jpg',
+      'progetti/casa-mirabelli/06.jpg',
+    ],
+  },
+  {
+    slug: 'casa-giando',
+    title: 'Casa Giando',
+    category: 'Residenziale · Interni',
+    description:
+      "Intervento su un'ampia residenza, sviluppato dalla pianta arredata fino alla " +
+      "realizzazione. Il progetto ha ridefinito zona giorno, cucina e l'intera dotazione " +
+      "di bagni, ciascuno con una propria identità cromatica e materica: mosaici, " +
+      "rivestimenti ceramici e arredi su misura. Le immagini di cantiere e quelle degli " +
+      "ambienti ultimati documentano la coerenza tra progetto ed esecuzione.",
+    cover: 'progetti/casa-giando/01.jpg',
+    images: [
+      'progetti/casa-giando/01.jpg',
+      'progetti/casa-giando/02.jpg',
+      'progetti/casa-giando/03.jpg',
+      'progetti/casa-giando/04.jpg',
+      'progetti/casa-giando/05.jpg',
+      'progetti/casa-giando/06.jpg',
+      'progetti/casa-giando/07.jpg',
+      'progetti/casa-giando/08.jpg',
+      'progetti/casa-giando/09.jpg',
+      'progetti/casa-giando/10.jpg',
+      'progetti/casa-giando/11.jpg',
+      'progetti/casa-giando/12.jpg',
+      'progetti/casa-giando/13.jpg',
+      'progetti/casa-giando/14.jpg',
+    ],
+  },
+  {
+    slug: 'casa-ferraiolo-marano',
+    title: 'Casa Ferraiolo',
+    location: 'Marano di Napoli (NA)',
+    category: 'Residenziale · Nuova costruzione',
+    description:
+      "Edificio residenziale caratterizzato dall'alternanza tra volumi intonacati chiari e " +
+      "corpi aggettanti in colore terra, coronati da un'ampia copertura lignea a sporto. " +
+      "All'interno, la scala elicoidale collega i livelli come elemento scultoreo. Lo " +
+      "studio dei bagni è stato condotto con modellazione tridimensionale, per verificare " +
+      "in anticipo rivestimenti, cromie e disposizione dei sanitari.",
+    cover: 'progetti/casa-ferraiolo-marano/01.jpg',
+    images: [
+      'progetti/casa-ferraiolo-marano/01.jpg',
+      'progetti/casa-ferraiolo-marano/02.jpg',
+      'progetti/casa-ferraiolo-marano/03.jpg',
+      'progetti/casa-ferraiolo-marano/04.jpg',
+      'progetti/casa-ferraiolo-marano/05.jpg',
+      'progetti/casa-ferraiolo-marano/06.jpg',
+      'progetti/casa-ferraiolo-marano/07.jpg',
+      'progetti/casa-ferraiolo-marano/08.jpg',
+      'progetti/casa-ferraiolo-marano/09.jpg',
+      'progetti/casa-ferraiolo-marano/10.jpg',
+    ],
+  },
+  {
+    slug: 'biblioteca-liceo-imbriani',
+    title: 'Biblioteca Liceo Imbriani',
+    location: "Pomigliano d'Arco (NA)",
+    category: 'Pubblico · Interni',
+    description:
+      "Progetto di riqualificazione della biblioteca scolastica, pensata come spazio di " +
+      "studio e lettura condiviso. Il layout organizza banconi di consultazione, postazioni " +
+      "di lettura e scaffalature perimetrali attorno alla struttura esistente, sfruttando " +
+      "la luce naturale delle grandi finestrate. Dai disegni al tratto ai render " +
+      "fotorealistici, la modellazione 3D ha guidato la scelta di arredi e colori.",
+    cover: 'progetti/biblioteca-liceo-imbriani/01.jpg',
+    images: [
+      'progetti/biblioteca-liceo-imbriani/01.jpg',
+      'progetti/biblioteca-liceo-imbriani/02.jpg',
+      'progetti/biblioteca-liceo-imbriani/03.jpg',
+      'progetti/biblioteca-liceo-imbriani/04.jpg',
+      'progetti/biblioteca-liceo-imbriani/05.jpg',
+    ],
+  },
 ];
 
 export function findProject(slug: string): Project | undefined {

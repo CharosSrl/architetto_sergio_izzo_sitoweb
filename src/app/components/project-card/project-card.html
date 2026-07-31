@@ -5,7 +5,9 @@
   </div>
   <div class="card__body">
     <h3 class="card__title">{{ project().title }}</h3>
-    <p class="card__loc">{{ project().location }}</p>
+    @if (project().location) {
+      <p class="card__loc">{{ project().location }}</p>
+    }
     <span class="card__link">Scopri il progetto →</span>
   </div>
 </a>
