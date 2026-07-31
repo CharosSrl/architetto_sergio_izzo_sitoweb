@@ -171,8 +171,8 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'casa-marra-arzano',
-    title: 'Casa Marra',
+    slug: 'casa-sansone-arzano',
+    title: 'Casa Sansone',
     location: 'Arzano (NA)',
     category: 'Residenziale · Interni',
     description:
@@ -180,19 +180,53 @@ export const PROJECTS: Project[] = [
       "studio degli ambienti, dei materiali e degli arredi è stato sviluppato " +
       "attraverso una serie completa di render, a supporto delle scelte progettuali " +
       "e della comunicazione con il committente.",
-    cover: 'progetti/casa-marra-arzano/01.jpg',
+    cover: 'progetti/casa-sansone-arzano/01.jpg',
     images: [
-      'progetti/casa-marra-arzano/01.jpg',
-      'progetti/casa-marra-arzano/02.jpg',
-      'progetti/casa-marra-arzano/03.jpg',
-      'progetti/casa-marra-arzano/04.jpg',
-      'progetti/casa-marra-arzano/05.jpg',
-      'progetti/casa-marra-arzano/06.jpg',
-      'progetti/casa-marra-arzano/07.jpg',
-      'progetti/casa-marra-arzano/08.jpg',
-      'progetti/casa-marra-arzano/09.jpg',
-      'progetti/casa-marra-arzano/10.jpg',
-      'progetti/casa-marra-arzano/11.jpg',
+      'progetti/casa-sansone-arzano/01.jpg',
+      'progetti/casa-sansone-arzano/02.jpg',
+      'progetti/casa-sansone-arzano/03.jpg',
+      'progetti/casa-sansone-arzano/04.jpg',
+      'progetti/casa-sansone-arzano/05.jpg',
+    ],
+  },
+  {
+    slug: 'b-n-b-borbone-napoli',
+    title: 'B&B I Borbone',
+    location: 'Napoli (NA)',
+    category: 'Ricettivo · B&B',
+    description:
+      "Progetto di ristrutturazione e allestimento di un bed & breakfast nel cuore di " +
+      "Napoli. L'intervento valorizza gli ambienti esistenti con un linguaggio sobrio " +
+      "ed accogliente, pensato per offrire agli ospiti spazi confortevoli e di " +
+      "carattere.",
+    cover: 'progetti/b-n-b-borbone-napoli/01.jpeg',
+    images: [
+      'progetti/b-n-b-borbone-napoli/01.jpeg',
+      'progetti/b-n-b-borbone-napoli/02.jpeg',
+      'progetti/b-n-b-borbone-napoli/03.jpeg',
+      'progetti/b-n-b-borbone-napoli/04.jpeg',
+      'progetti/b-n-b-borbone-napoli/05.jpeg',
+      'progetti/b-n-b-borbone-napoli/06.jpeg',
+      'progetti/b-n-b-borbone-napoli/07.jpeg',
+      'progetti/b-n-b-borbone-napoli/08.jpeg',
+    ],
+  },
+  {
+    slug: 'casa-f-esposito',
+    title: 'Casa F. Esposito',
+    location: "Pomigliano d'Arco (NA)",
+    category: 'Residenziale',
+    description:
+      "Progetto di una residenza privata a Pomigliano d'Arco. L'intervento punta a " +
+      "ottimizzare la distribuzione degli spazi interni, garantendo comfort abitativo " +
+      "e una forte identità architettonica su misura per le esigenze della famiglia.",
+    cover: 'progetti/casa-f-esposito/01.jpeg',
+    images: [
+      'progetti/casa-f-esposito/01.jpeg',
+      'progetti/casa-f-esposito/02.jpeg',
+      'progetti/casa-f-esposito/03.jpeg',
+      'progetti/casa-f-esposito/04.jpeg',
+      'progetti/casa-f-esposito/05.jpeg',
     ],
   },
   {
