@@ -253,6 +253,7 @@ export const PROJECTS: Project[] = [
   {
     slug: 'casa-mirabelli',
     title: 'Casa Mirabelli',
+    location: 'Melito di Napoli (NA)',
     category: 'Residenziale · Interni',
     description:
       "Progetto di interni per una residenza privata, con particolare attenzione al " +
@@ -273,6 +274,7 @@ export const PROJECTS: Project[] = [
   {
     slug: 'casa-giando',
     title: 'Casa Giando',
+    location: "Pomigliano d'Arco (NA)",
     category: 'Residenziale · Interni',
     description:
       "Intervento su un'ampia residenza, sviluppato dalla pianta arredata fino alla " +
