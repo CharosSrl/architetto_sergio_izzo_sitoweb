@@ -295,9 +295,7 @@ export const PROJECTS: Project[] = [
       'progetti/casa-giando/09.jpg',
       'progetti/casa-giando/10.jpg',
       'progetti/casa-giando/11.jpg',
-      'progetti/casa-giando/12.jpg',
-      'progetti/casa-giando/13.jpg',
-      'progetti/casa-giando/14.jpg',
+      'progetti/casa-giando/12.jpg'
     ],
   },
   {
@@ -322,7 +320,7 @@ export const PROJECTS: Project[] = [
       'progetti/casa-ferraiolo-marano/07.jpg',
       'progetti/casa-ferraiolo-marano/08.jpg',
       'progetti/casa-ferraiolo-marano/09.jpg',
-      'progetti/casa-ferraiolo-marano/10.jpg',
+      'progetti/casa-ferraiolo-marano/10.jpg'
     ],
   },
   {
@@ -340,7 +338,6 @@ export const PROJECTS: Project[] = [
     images: [
       'progetti/biblioteca-liceo-imbriani/01.jpg',
       'progetti/biblioteca-liceo-imbriani/02.jpg',
-      'progetti/biblioteca-liceo-imbriani/03.jpg',
       'progetti/biblioteca-liceo-imbriani/04.jpg',
       'progetti/biblioteca-liceo-imbriani/05.jpg',
     ],
