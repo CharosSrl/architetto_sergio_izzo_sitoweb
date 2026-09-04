@@ -40,9 +40,11 @@ export class ProjectDetailComponent {
       const p = this.project();
       if (!p) return;
       const desc = p.description.slice(0, 160);
-      this.titleSvc.setTitle(`${p.title} · ${p.location} — Arch. Sergio Izzo`);
+      // La localitÃ  Ã¨ opzionale: senza guardia finirebbe "undefined" nel titolo.
+      const luogo = p.location ? ` · ${p.location}` : '';
+      this.titleSvc.setTitle(`${p.title}${luogo} — Arch. Sergio Izzo`);
       this.metaSvc.updateTag({ name: 'description', content: desc });
-      this.metaSvc.updateTag({ property: 'og:title', content: `${p.title} · ${p.location}` });
+      this.metaSvc.updateTag({ property: 'og:title', content: `${p.title}${luogo}` });
       this.metaSvc.updateTag({ property: 'og:description', content: desc });
       this.metaSvc.updateTag({ property: 'og:image', content: `${BASE_URL}/${p.cover}` });
       this.metaSvc.updateTag({ property: 'og:url', content: `${BASE_URL}/progetti/${p.slug}` });

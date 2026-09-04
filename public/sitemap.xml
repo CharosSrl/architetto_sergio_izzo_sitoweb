@@ -89,5 +89,30 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-silvestro-arzano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-mirabelli</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-giando</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/casa-ferraiolo-marano</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://architettosergioizzo.netlify.app/progetti/biblioteca-liceo-imbriani</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>

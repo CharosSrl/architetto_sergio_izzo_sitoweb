@@ -10,9 +10,11 @@
         <a class="back-link" routerLink="/progetti">← Tutti i progetti</a>
         <span class="eyebrow eyebrow--light">{{ p.category }}</span>
         <h1>{{ p.title }}</h1>
-        <p class="detail-hero__meta">
-          {{ p.location }}@if (p.year) {<span> · {{ p.year }}</span>}
-        </p>
+        @if (p.location || p.year) {
+          <p class="detail-hero__meta">
+            @if (p.location) {<span>{{ p.location }}</span>}@if (p.location && p.year) {<span> · </span>}@if (p.year) {<span>{{ p.year }}</span>}
+          </p>
+        }
       </div>
     </section>
 
@@ -24,10 +26,12 @@
           <p>{{ p.description }}</p>
         </div>
         <aside class="detail-info__facts">
-          <div class="fact">
-            <span class="fact__label">Località</span>
-            <span class="fact__value">{{ p.location }}</span>
-          </div>
+          @if (p.location) {
+            <div class="fact">
+              <span class="fact__label">Località</span>
+              <span class="fact__value">{{ p.location }}</span>
+            </div>
+          }
           <div class="fact">
             <span class="fact__label">Tipologia</span>
             <span class="fact__value">{{ p.category }}</span>
@@ -86,7 +90,9 @@
               <img [src]="c.cover" [alt]="c.title" loading="lazy" />
               <div class="rel-card__body">
                 <h3>{{ c.title }}</h3>
-                <span>{{ c.location }}</span>
+                @if (c.location) {
+                  <span>{{ c.location }}</span>
+                }
               </div>
             </a>
           }

@@ -3,8 +3,8 @@ export interface Project {
   slug: string;
   /** Titolo del progetto */
   title: string;
-  /** LocalitÃ  dell'intervento */
-  location: string;
+  /** LocalitÃ  dell'intervento (opzionale) */
+  location?: string;
   /** Categoria/tipologia (es. Residenziale, Restauro, Urbanistica) */
   category: string;
   /** Anno o periodo di riferimento (opzionale) */
